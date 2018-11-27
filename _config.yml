@@ -80,6 +80,7 @@ theme: hexo-theme-next
 deploy: 
   type: git
   repository: git@github.com:erhuoyan/erhuoyan.github.io.git
+  #repository: git@gitee.com:erhuoyan/blog.git
   branch: master
  
 # Extensions
@@ -97,3 +98,4 @@ live2d:
     height: 200 
   mobile: 
     show: true
+avatar: /images/backgroung.jpg
