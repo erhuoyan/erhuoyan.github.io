@@ -19,6 +19,7 @@ categories:
 # 安装
 
 安装 Hexo必须先在电脑中安装下列应用程序：
+
 - [Node.js](https://nodejs.org/en/)
 - [Git](http://xk2.ahu.cn/CheckCode.aspx)  
 
@@ -35,19 +36,20 @@ Windows|Ubuntu
 
 cURL:
 
-` curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh`
+`curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh`
 
 Wget:
 
-` wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh`
+`wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh`
 
 安装完成后，重启终端并执行下列命令即可安装 Node.js。
 
-` nvm install stable`
+`nvm install stable`
 
 {% note warning %}
 
 ### Windows用户
+
 对与windows用户来说建议使用[安装程序](https://nodejs.org/en/)进行安装。安装时，请勾选**Add to PATH**选项。
 Windows可以使用**Git Bash**,安装完git之后在开始菜单中搜索git或在任意目录下右键选择`Git Bash Here`，可在该环境下直接使用上述命令安装Node.js。
 
