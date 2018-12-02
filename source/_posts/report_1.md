@@ -28,6 +28,7 @@ categories: 实验报告
  2. 借用Qt开发平台编写能在Linux系统中运行的五子棋程序。
 
 #### &ensp;<font face="Microsoft JhengHei">【实验原理及方法】</font>
+
 1. 棋盘可以自己画，对弈程序请自行在网上找相关代码。
 
 2. 在实验楼上提交报告，代码群里由班发统一提交。
@@ -123,6 +124,7 @@ void draw_chessboard()
 }
 
 ```
+
 - <font color = FF0000>绘制棋子</font>
 
 ```c++
@@ -146,6 +148,7 @@ void draw_chessmen(int x, int y, int num, int a, int b, int chess[][15])
 }
 
 ```
+
 - <font color = FF0000>判断胜负</font>
 
 ```c++
@@ -252,8 +255,11 @@ int  judge(int a, int b, int c, int chess[][15])
 	}
 }
 ```
+
 ##### <center>基于Qt的五子棋程序</center>
+
 ###### <br>&ensp;1. 安装Qt:
+
 &ensp;[安装地址](https://download.qt.io/official_releases/qt/5.11/5.11.2/)
 
 <br>&ensp;打开网址显示如下界面：
@@ -270,7 +276,9 @@ int  judge(int a, int b, int c, int chess[][15])
 <br>&emsp;在命令端口中输入命令：sudo apt-get install libgl1-mesa-dev 进行安装。
 <br>&ensp;打开Qt Creator如图：
 <br>&ensp;![](https://i.imgur.com/FKx7Hmm.png)
+
 ###### <br>&ensp;2. 代码片段</br>
+
 - <font color=#FF0000>棋子类Item.h：</font>
 <br>包含一个QPoint圆心坐标，
 <br>和一个bool变量，
@@ -296,6 +304,7 @@ public:
 	bool m_bBlack;
 };
 ```
+
 - <font color=#FF0000>MainWindow主窗口类</font>
  <br>QVector<Item> m_items 保存所有棋子。
 
@@ -363,6 +372,7 @@ int MainWindow::CountNearItem(Item item,QPoint ptDirection)
 ```
 
 - <font color=FF0000>鼠标点击消息：</font>
+
 ```c++
  void MainWindow::mousePressEvent(QMouseEvent * e)
 {

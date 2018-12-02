@@ -45,7 +45,7 @@ hexo s
 
 输入命令后终端输出为：
 
-```bash
+```Shell
 ubw@DESKTOP-12HM3DA MINGW64 /h/blog
 $ hexo g
 INFO  Start processing
@@ -95,7 +95,7 @@ hexo g   #hexo generate的简写
 hexo s  #hexo server的简写
 ```
 
-开启后默认端口是4000.默认访问网址是[http://localhost:4000/](http://localhost:4000/)
+开启后默认端口是4000.默认访问网址是`http://localhost:4000/`
 如果您想要更改端口，或是在执行时遇到了 EADDRINUSE 错误，可以在执行时使用 -p 选项指定其他端口，如下：
 
 ```bash
@@ -114,10 +114,8 @@ hexo d  #hexo deploy的简写
 
 您可执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。
 
-```bash
 hexo g -d
 hexo d -g
-```
 
 {% endnote %}
 
@@ -171,7 +169,7 @@ npm install hexo-deployer-git --save
 
 配置 Hexo根目录的 _config.yml，xxx为你的用户名。
 
-```yml
+```yaml
 deploy:
   type: git
   repo: git@github.com:xxx/xxx.github.io.git
