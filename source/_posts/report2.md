@@ -24,10 +24,12 @@ categories: 实验报告
 #### &ensp;<font face="Microsoft JhengHei">【实验名称】<u>&emsp;Matlab环境和函数&emsp;&emsp;&emsp;&emsp;</u></font>
 
 #### &ensp;<font face="Microsoft JhengHei">【实验目的】</font>
- &emsp;&emsp;1. 练习掌握MATLAB实用教程（第二版）书中第二至三章函数
+
+&emsp;&emsp;1. 练习掌握MATLAB实用教程（第二版）书中第二至三章函数
 
 #### &ensp;<font face="Microsoft JhengHei">【实验原理及方法】</font>
- &emsp;&emsp;1. 使用MATLAB或Octave软件完成书上习题
+
+&emsp;&emsp;1. 使用MATLAB或Octave软件完成书上习题
 
 #### &ensp;<font face="Microsoft JhengHei">【实验内容及过程】</font >
 
@@ -73,7 +75,7 @@ ans2_2 = [ans2_3_1, ans2_3_2, ans2_3_3, ans2_3_4, ans2_3_5]
 % 2.4 (a)
 r1 =  5;
 s1 = pi * r1^2;
-% 2.4 (b) 
+% 2.4 (b)
 r2 = 10;
 s2 = 4*pi*r2^2;
 % 2.4 (c)
@@ -129,7 +131,7 @@ P = 220;
 T111 = P*V/(n*R);
 T222 = (P+n^2*a./V.^2).*(V-n*b)/(n*R);
 ans2_15b= T222
- 
+
 % 2.16
 a = [-1/3, 0, 1/3, 2/3];
 format short
@@ -183,7 +185,7 @@ ans3_9 = length(primes(20000))-length(primes(10000))
 
 % 3.10
 rad = [0:0.1:2*pi];
-deg =rad*180/pi; 
+deg =rad*180/pi;
 ans3_10 = [deg', sin(rad)', cos(rad)', tan(rad)']
 
 % 3.13
