@@ -1,5 +1,5 @@
 ---
-title: 实验报告-基于easyx和Qt的五子棋程序
+title:  MATLAB实验报告（一）
 copyright: true
 date: 2018-11-29 18:39:10
 tags: 
