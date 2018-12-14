@@ -1,13 +1,14 @@
 ---
 title: hexo+github搭建博客（一）
 copyright: true
+tags:
+  - hexo
+  - blog
+  - github
+categories:
+  - 折腾
+abbrlink: 2d01
 date: 2018-12-01 11:44:37
-tags: 
-- hexo
-- blog
-- github
-categories: 
-- 折腾
 ---
 
 {% note %}

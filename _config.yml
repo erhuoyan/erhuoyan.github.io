@@ -16,7 +16,8 @@ timezone:
 #url: http://yoursite.com
 url: https://erhuoyan.github.io
 root: /
-permalink: :year/:month/:day/:title/
+#permalink: :year/:month/:day/:title/
+permalink: blog/:abbrlink/
 permalink_defaults:
 
 # Directory
@@ -102,3 +103,9 @@ live2d:
   mobile: 
     show: true
 avatar: /images/backgroung.jpg
+
+# abbrlink config
+abbrlink:
+  alg: crc16 #support crc16(default) and crc32
+  rep: hex    #support dec(default) and hex
+   # 更改 permalink 值

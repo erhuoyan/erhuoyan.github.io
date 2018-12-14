@@ -1,12 +1,13 @@
 ---
-title:  MATLAB实验报告（一）
+title: MATLAB实验报告（一）
 copyright: true
-date: 2018-11-29 18:39:10
-tags: 
-- Qt
-- easyx
-- c++
+tags:
+  - Qt
+  - easyx
+  - c++
 categories: 实验报告
+abbrlink: aaed
+date: 2018-11-29 18:39:10
 ---
 
 > 基于easyx和Qt的五子棋程序

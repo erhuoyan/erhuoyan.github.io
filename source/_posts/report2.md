@@ -1,10 +1,11 @@
-﻿---
+---
 title: MATLAB实验报告（二）
 copyright: true
-date: 2018-12-4 18:39:10
-tags: 
-- MATLAB
+tags:
+  - MATLAB
 categories: 实验报告
+abbrlink: 3a97
+date: 2018-12-04 18:39:10
 ---
 
 <br>&emsp;<font size=4 face="宋体">学号 <u>Z11714047&emsp;&emsp;&emsp;</u>&emsp;专业<u> &emsp;自动化&emsp;&emsp;&emsp;&emsp;</u>&emsp;姓名<u>&emsp;耿严&emsp;&emsp;&emsp;&emsp;&emsp;</u></font></br>
