@@ -10,9 +10,9 @@ abbrlink: aaed
 date: 2018-11-29 18:39:10
 ---
 
-> 基于easyx和Qt的五子棋程序
+> MATLAB程序设计实验报告 No.1(五子棋程序)
 
-<!--more-->
+<!--less-->
 
 # <center> <font face="华文新魏">安徽大学电气工程及自动化学院本科实验报告</font></center>
 

@@ -8,13 +8,15 @@ abbrlink: 3a97
 date: 2018-12-04 18:39:10
 ---
 
+> MATLAB程序设计实验报告 No.2(二、三章习题)
+
+<!--less-->
+
 <br>&emsp;<font size=4 face="宋体">学号 <u>Z11714047&emsp;&emsp;&emsp;</u>&emsp;专业<u> &emsp;自动化&emsp;&emsp;&emsp;&emsp;</u>&emsp;姓名<u>&emsp;耿严&emsp;&emsp;&emsp;&emsp;&emsp;</u></font></br>
 
 <br>&emsp;<font size=4 face="宋体">实验日期 <u>&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;</u>&emsp;指导教师<u> &emsp;章军&emsp;&emsp;&emsp;</u>&emsp;实验成绩<u>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</u></font></br>
 
 <br><center>![1](https://i.loli.net/2018/12/04/5c05ed462a994.png)</center></br>
-
-<!--more-->
 
 ### <br><center><font  face="华文新魏">安徽大学电气工程及自动化学院本科实验报告</font></center></b>
 
