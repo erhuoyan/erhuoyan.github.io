@@ -112,7 +112,7 @@ abbrlink:
 
 backup: 
   type: git
-  theme: hexo
+  theme: next
   message: hexo blog source
   repository:  
-    github: git@github.com:erhuoyan/erhuoyan.github.io.git,source
+    github: git@github.com:erhuoyan/blog.git,master
