@@ -110,9 +110,9 @@ abbrlink:
   rep: hex    #support dec(default) and hex
    # 更改 permalink 值
 
-backup: 
+backup:
   type: git
   theme: next
-  message: hexo blog source
-  repository:  
-    github: git@github.com:erhuoyan/blog.git,master
+  message: 备份博客
+  repository: 
+      github: git@github.com:erhuoyan/erhuoyan.github.io.git,backup
