@@ -114,4 +114,4 @@ backup:
   type: git
   message: hexo blog source
   repository:  
-   git@github.com:erhuoyan/erhuoyan.github.io.git,source
+    github: git@github.com:erhuoyan/erhuoyan.github.io.git,source
