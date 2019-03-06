@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+      
+    
+    
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Qt,easyx,c++,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="二货严の博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="MATLAB程序设计实验报告 No.1(五子棋程序)">
+<meta name="keywords" content="Qt,easyx,c++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MATLAB实验报告（一）">
+<meta property="og:url" content="https://erhuoyan.github.io/blog/aaed/index.html">
+<meta property="og:site_name" content="二货严の博客">
+<meta property="og:description" content="MATLAB程序设计实验报告 No.1(五子棋程序)">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.imgur.com/5zbGC5K.png">
+<meta property="og:image" content="https://i.imgur.com/T1pIEFO.png">
+<meta property="og:image" content="https://i.imgur.com/oWFZeen.png">
+<meta property="og:image" content="https://i.imgur.com/FKx7Hmm.png">
+<meta property="og:image" content="https://i.imgur.com/t4wj7wh.png">
+<meta property="og:image" content="https://i.imgur.com/R2pHOTZ.png">
+<meta property="og:image" content="https://i.imgur.com/HJtbDW4.png">
+<meta property="og:image" content="https://i.imgur.com/egO69PB.png">
+<meta property="og:updated_time" content="2019-03-06T04:23:55.726Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MATLAB实验报告（一）">
+<meta name="twitter:description" content="MATLAB程序设计实验报告 No.1(五子棋程序)">
+<meta name="twitter:image" content="https://i.imgur.com/5zbGC5K.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://erhuoyan.github.io/blog/aaed/">
+
+
+ 
+   <script> 
+   (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice") 
+   daovoice('init', { 
+      app_id: "7da5cee4" 
+      }); 
+   daovoice('update'); 
+   </script> 
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！请询问博主大人！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+  <title>MATLAB实验报告（一） | 二货严の博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <a href="https://github.com/erhuoyan" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">二货严の博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">人生苦短，多敲键盘</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://erhuoyan.github.io/blog/aaed/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="耿严">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/backgroung.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="二货严の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MATLAB实验报告（一）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-29T18:39:10+08:00">
+                2018-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/实验报告/" itemprop="url" rel="index">
+                    <span itemprop="name">实验报告</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/blog/aaed/" class="leancloud_visitors" data-flag-title="MATLAB实验报告（一）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             <span>℃</span>
+	     </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.3k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  10 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="安徽大学电气工程及自动化学院本科实验报告"><a href="#安徽大学电气工程及自动化学院本科实验报告" class="headerlink" title=" 安徽大学电气工程及自动化学院本科实验报告"></a><center> <font face="华文新魏">安徽大学电气工程及自动化学院本科实验报告</font></center></h1><h4 id="ensp-【课程名称】-emsp-emsp-MATLAB程序设计实验-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp"><a href="#ensp-【课程名称】-emsp-emsp-MATLAB程序设计实验-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp" class="headerlink" title="&ensp;【课程名称】&emsp;&emsp;MATLAB程序设计实验&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"></a>&ensp;<font face="Microsoft JhengHei">【课程名称】<u>&emsp;&emsp;MATLAB程序设计实验&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</u></font></h4><h4 id="ensp-【课程目标】-（依据教学大纲）"><a href="#ensp-【课程目标】-（依据教学大纲）" class="headerlink" title="&ensp;【课程目标】 （依据教学大纲）"></a>&ensp;<font face="Microsoft JhengHei">【课程目标】</font> <font face="宋体" size="4">（依据教学大纲）</font></h4><h4 id="ensp-【实验名称】-emsp-emsp-基于easyx和Qt的五子棋程序-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp"><a href="#ensp-【实验名称】-emsp-emsp-基于easyx和Qt的五子棋程序-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp" class="headerlink" title="&ensp;【实验名称】&emsp;&emsp;基于easyx和Qt的五子棋程序&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"></a>&ensp;<font face="Microsoft JhengHei">【实验名称】<u>&emsp;&emsp;基于easyx和Qt的五子棋程序&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</u></font></h4><h4 id="ensp-【实验目的】"><a href="#ensp-【实验目的】" class="headerlink" title="&ensp;【实验目的】"></a>&ensp;<font face="Microsoft JhengHei">【实验目的】</font></h4><ol>
+<li><p>参考<a href="http://www.easx.cn上教程，实现一个五子棋程序。" target="_blank" rel="noopener">www.easx.cn上教程，实现一个五子棋程序。</a></p>
+</li>
+<li><p>借用Qt开发平台编写能在Linux系统中运行的五子棋程序。</p>
+</li>
+</ol>
+<h4 id="ensp-【实验原理及方法】"><a href="#ensp-【实验原理及方法】" class="headerlink" title="&ensp;【实验原理及方法】"></a>&ensp;<font face="Microsoft JhengHei">【实验原理及方法】</font></h4><ol>
+<li><p>棋盘可以自己画，对弈程序请自行在网上找相关代码。</p>
+</li>
+<li><p>在实验楼上提交报告，代码群里由班发统一提交。</p>
+</li>
+</ol>
+<h4 id="ensp-【实验内容及过程】"><a href="#ensp-【实验内容及过程】" class="headerlink" title="&ensp;【实验内容及过程】"></a>&ensp;<font face="Microsoft JhengHei">【实验内容及过程】</font></h4><h5 id="基于easyx的五子棋程序"><a href="#基于easyx的五子棋程序" class="headerlink" title="基于easyx的五子棋程序"></a><center>基于easyx的五子棋程序</center></h5><h6 id="ensp-1-安装easyx-下载地址"><a href="#ensp-1-安装easyx-下载地址" class="headerlink" title="&ensp;1. 安装easyx:下载地址"></a>&ensp;1. 安装easyx:<a href="https://www.easyx.cn/" target="_blank" rel="noopener">下载地址</a></h6><p>&emsp;&emsp;安装界面</p>
+<p><br><center><img src="https://i.imgur.com/5zbGC5K.png" alt></center></p>
+<h6 id="ensp-2-代码片段"><a href="#ensp-2-代码片段" class="headerlink" title="&ensp;2. 代码片段"></a>&ensp;2. 代码片段</h6><ul>
+<li><font color="FF0000">各类头文件及自定义函数</font>
+
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"graphics.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"conio.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"windows.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init_system</span><span class="params">()</span></span>;<span class="comment">//初始化系统</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">close_system</span><span class="params">()</span></span>;<span class="comment">//关闭系统</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init_globales</span><span class="params">()</span></span>;<span class="comment">//初始化参数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">play_chess</span><span class="params">()</span></span>;<span class="comment">//开始五子棋游戏</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">gamestart</span><span class="params">()</span></span>;<span class="comment">//开始下棋</span></span><br><span class="line"><span class="function"><span class="keyword">int</span>  <span class="title">count_xyk_by_message</span><span class="params">(MOUSEMSG *m, <span class="keyword">int</span> *x, <span class="keyword">int</span> *y, <span class="keyword">int</span> *a, <span class="keyword">int</span> *b)</span></span>;<span class="comment">//计算鼠标所在区域状态</span></span><br><span class="line"><span class="function"><span class="keyword">int</span>  <span class="title">judge</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c, <span class="keyword">int</span> chess[][<span class="number">15</span>])</span></span>;<span class="comment">//判断胜负条件</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">regret</span><span class="params">(<span class="keyword">int</span> x2, <span class="keyword">int</span> y2, <span class="keyword">int</span> chess[<span class="number">15</span>][<span class="number">15</span>], <span class="keyword">int</span> chessbox[][<span class="number">2</span>])</span></span>;<span class="comment">//悔棋</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw_chessmen</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> num, <span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> chess[][<span class="number">15</span>])</span></span>;<span class="comment">//绘制黑白棋子</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw_chessboard</span><span class="params">()</span></span>;<span class="comment">//画棋盘、菜单、状态框，画标题</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">text</span><span class="params">()</span></span>;<span class="comment">//绘制标题</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw_menu</span><span class="params">()</span></span>;<span class="comment">//绘制菜单</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">over_black</span><span class="params">()</span></span>;<span class="comment">//绘制黑棋胜字样</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">over_white</span><span class="params">()</span></span>;<span class="comment">//绘制白棋胜字样</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">position</span><span class="params">()</span></span>;<span class="comment">//绘制状态栏及内容</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">text_black</span><span class="params">()</span></span>;<span class="comment">//绘制黑棋下字样</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">text_white</span><span class="params">()</span></span>;<span class="comment">//绘制白棋下字样</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw_regret</span><span class="params">(<span class="keyword">int</span> m, <span class="keyword">int</span> n, <span class="keyword">int</span> x2, <span class="keyword">int</span> y2)</span></span>;<span class="comment">//所有悔棋情况</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw_re</span><span class="params">(<span class="keyword">int</span> x2, <span class="keyword">int</span> y2)</span></span>;<span class="comment">//绘制悔棋棋子</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><font color="FF0000">绘制棋盘</font>
+
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw_chessboard</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i;</span><br><span class="line"><span class="comment">//	loadimage(NULL, "E:\\个人\\PICTURE\\123.jpg");</span></span><br><span class="line">	setbkcolor(BLACK);</span><br><span class="line">	cleardevice();<span class="comment">/*用背景色清空屏幕*/</span></span><br><span class="line">	setlinestyle(PS_SOLID, <span class="number">1</span>);</span><br><span class="line">	setlinecolor(WHITE);</span><br><span class="line">	rectangle(m_x_box, m_y_box, m_x_box1, m_y_box1);</span><br><span class="line">	setfillcolor(RGB(<span class="number">172</span>, <span class="number">81</span>, <span class="number">24</span>));</span><br><span class="line">	setfillstyle(BS_SOLID);</span><br><span class="line">	floodfill((m_x0 + m_x01) / <span class="number">2</span>, (m_y0 + m_y01) / <span class="number">2</span>, WHITE);</span><br><span class="line"></span><br><span class="line">	setlinestyle(PS_SOLID, <span class="number">2</span>);</span><br><span class="line">	setlinecolor(BLACK);</span><br><span class="line">	rectangle(m_x0 - <span class="number">4</span>, m_y0 - <span class="number">4</span>, m_x01 + <span class="number">4</span>, m_y01 + <span class="number">4</span>);</span><br><span class="line"></span><br><span class="line">	setlinestyle(PS_SOLID, <span class="number">1</span>);</span><br><span class="line">	setlinecolor(BLACK);</span><br><span class="line">	rectangle(m_x0, m_y0, m_x01, m_y01);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> (i = m_x0 + m_wh; i &lt; m_x01; i += m_wh)<span class="comment">//绘制交叉线</span></span><br><span class="line">	&#123;</span><br><span class="line">		line(i, m_y0, i, m_y01);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (i = m_y0 + m_wh; i &lt; m_y01; i += m_wh)</span><br><span class="line">	&#123;</span><br><span class="line">		line(m_x0, i, m_x01, i);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	setlinecolor(BLACK);</span><br><span class="line">	setfillcolor(BLACK);<span class="comment">/*绘制画笔颜色以及填充颜色*/</span></span><br><span class="line"></span><br><span class="line">	fillcircle(m_x0 + m_wh * <span class="number">3</span>, m_y0 + m_wh * <span class="number">3</span>, <span class="number">3</span>);<span class="comment">//绘制星位</span></span><br><span class="line">	fillcircle(m_x0 + m_wh * <span class="number">11</span>, m_y0 + m_wh * <span class="number">3</span>, <span class="number">3</span>);</span><br><span class="line">	fillcircle(m_x0 + m_wh * <span class="number">3</span>, m_y0 + m_wh * <span class="number">11</span>, <span class="number">3</span>);</span><br><span class="line">	fillcircle(m_x0 + m_wh * <span class="number">11</span>, m_y0 + m_wh * <span class="number">11</span>, <span class="number">3</span>);</span><br><span class="line">	fillcircle(m_x0 + m_wh * <span class="number">7</span>, m_y0 + m_wh * <span class="number">7</span>, <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line">	draw_menu();<span class="comment">/*绘制菜单*/</span></span><br><span class="line">	position();<span class="comment">/*绘制状态框*/</span></span><br><span class="line">	text();<span class="comment">/*绘制标题*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><font color="FF0000">绘制棋子</font>
+
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw_chessmen</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> num, <span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> chess[][<span class="number">15</span>])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (num % <span class="number">2</span> == <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		setlinecolor(BLACK);</span><br><span class="line">		setfillcolor(BLACK);</span><br><span class="line">		fillcircle(x, y, <span class="number">15</span>);</span><br><span class="line">		chess[a][b] = NUM_BLACK;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (num % <span class="number">2</span> != <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		setlinecolor(WHITE);</span><br><span class="line">		setfillcolor(WHITE);</span><br><span class="line">		fillcircle(x, y, <span class="number">15</span>);</span><br><span class="line">		chess[a][b] = NUM_WHITE;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><font color="FF0000">判断胜负</font>
+
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span>  <span class="title">judge</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c, <span class="keyword">int</span> chess[][<span class="number">15</span>])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i, j, n1, n2; <span class="comment">//i 表示行，j表示列</span></span><br><span class="line">	<span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		n1 = <span class="number">0</span>;</span><br><span class="line">		n2 = <span class="number">0</span>;</span><br><span class="line">		<span class="comment">/*水平向左统计同种颜色棋子个数*/</span></span><br><span class="line">		<span class="keyword">for</span> (i = a, j = b; j &gt;= <span class="number">0</span>; j--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (chess[i][j] == c)</span><br><span class="line">				n1++;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">/*水平向右统计同种颜色棋子个数*/</span></span><br><span class="line">		<span class="keyword">for</span> (i = a, j = b; j &lt;= m_row1; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (chess[i][j] == c)</span><br><span class="line">				n2++;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (n1 + n2 - <span class="number">1</span> &gt;= <span class="number">5</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span>(<span class="number">1</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">/*垂直向上统计同种颜色棋子个数*/</span></span><br><span class="line">		n1 = <span class="number">0</span>;</span><br><span class="line">		n2 = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (i = a, j = b; i &gt;= <span class="number">0</span>; i--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (chess[i][j] == c)</span><br><span class="line">				n1++;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">/*垂直向下统计同种颜色棋子个数*/</span></span><br><span class="line">		<span class="keyword">for</span> (i = a, j = b; i &lt;= m_row1; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (chess[i][j] == c)</span><br><span class="line">				n2++;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (n1 + n2 - <span class="number">1</span> &gt;= <span class="number">5</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span>(<span class="number">1</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">/*向左上方统计同种颜色棋子个数*/</span></span><br><span class="line">		n1 = <span class="number">0</span>;</span><br><span class="line">		n2 = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (i = a, j = b; i &gt;= <span class="number">0</span>, j &gt;= <span class="number">0</span>; i--, j--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (chess[i][j] == c)</span><br><span class="line">				n1++;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">/*向右下方统计同种颜色棋子个数*/</span></span><br><span class="line">		<span class="keyword">for</span> (i = a, j = b; i &lt;= m_row1, j &lt;= m_row1; i++, j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (chess[i][j] == c)</span><br><span class="line">				n2++;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (n1 + n2 - <span class="number">1</span> &gt;= <span class="number">5</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span>(<span class="number">1</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">/*向右上方统计同种颜色棋子个数*/</span></span><br><span class="line">		n1 = <span class="number">0</span>;</span><br><span class="line">		n2 = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (i = a, j = b; i &gt;= <span class="number">0</span>, j &lt;= m_row1; i--, j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (chess[i][j] == c)</span><br><span class="line">				n1++;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">/*向左下方统计同种颜色棋子个数*/</span></span><br><span class="line">		<span class="keyword">for</span> (i = a, j = b; i &lt;= m_row1, j &gt;= <span class="number">0</span>; i++, j--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (chess[i][j] == c)</span><br><span class="line">				n2++;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (n1 + n2 - <span class="number">1</span> &gt;= <span class="number">5</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span>(<span class="number">1</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span>(<span class="number">0</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="基于Qt的五子棋程序"><a href="#基于Qt的五子棋程序" class="headerlink" title="基于Qt的五子棋程序"></a><center>基于Qt的五子棋程序</center></h5><h6 id="ensp-1-安装Qt"><a href="#ensp-1-安装Qt" class="headerlink" title="&ensp;1. 安装Qt:"></a><br>&ensp;1. 安装Qt:</h6><p>&ensp;<a href="https://download.qt.io/official_releases/qt/5.11/5.11.2/" target="_blank" rel="noopener">安装地址</a></p>
+<p><br>&ensp;打开网址显示如下界面：<br>&ensp;<img src="https://i.imgur.com/T1pIEFO.png" alt></p>
+<p><br>&emsp;Linux系统选择那个.run安装文件。(我这里选择qt-opensource-linux-x64-5.11.2.run)<br><br>&emsp;下载完成后cd到qt-opensource-linux-x64-5.11.2.run所在的目录下.<br><br>&emsp;在命令端口中输入安装命令：sudo ./qt-opensource-linux-x64-5.11.2.run<br><br>&ensp;弹出如下界面：</p>
+<p><br><center><img src="https://i.imgur.com/oWFZeen.png" alt></center><br><br>&emsp;按照提示一步步安装完成。<br><br>&ensp;安装 libgl1-mesa-dev<br><br>&emsp;在命令端口中输入命令：sudo apt-get install libgl1-mesa-dev 进行安装。<br><br>&ensp;打开Qt Creator如图：<br><br>&ensp;<img src="https://i.imgur.com/FKx7Hmm.png" alt></p>
+<h6 id="ensp-2-代码片段-1"><a href="#ensp-2-代码片段-1" class="headerlink" title="&ensp;2. 代码片段"></a><br>&ensp;2. 代码片段<br></h6><ul>
+<li><font color="#FF0000">棋子类Item.h：</font><br><br>包含一个QPoint圆心坐标，<br><br>和一个bool变量，<br><br>代表是黑方还是白方</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"qvector.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Item</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	Item(<span class="keyword">void</span>);</span><br><span class="line">	Item(QPoint pt,<span class="keyword">bool</span> bBlack);</span><br><span class="line">	~Item(<span class="keyword">void</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">bool</span> <span class="keyword">operator</span>==(<span class="keyword">const</span> Item &amp;t1)<span class="keyword">const</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> (m_pt == t1.m_pt) &amp;&amp; (m_bBlack == t1.m_bBlack);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	QPoint m_pt;</span><br><span class="line">	<span class="keyword">bool</span> m_bBlack;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><font color="#FF0000">MainWindow主窗口类</font><br><br>QVector<item> m_items 保存所有棋子。</item></li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> MAINWINDOW_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAINWINDOW_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QMainWindow&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"Item.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"qmap.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> Ui &#123;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainWindow</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> CHESS_ROWS		15</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> CHESS_COLUMES	15</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> RECT_WIDTH		50</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> RECT_HEIGHT		50</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainWindow</span> :</span> <span class="keyword">public</span> QMainWindow</span><br><span class="line">&#123;</span><br><span class="line">    Q_OBJECT</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">explicit</span> <span class="title">MainWindow</span><span class="params">(QWidget *parent = <span class="number">0</span>)</span></span>;</span><br><span class="line">    ~MainWindow();</span><br><span class="line"></span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">paintEvent</span><span class="params">(QPaintEvent *)</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">mousePressEvent</span><span class="params">(QMouseEvent *)</span></span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">DrawChessboard</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">DrawItems</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">DrawItemWithMouse</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">DrawChessAtPoint</span><span class="params">(QPainter&amp; painter,QPoint&amp; pt)</span></span>;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">CountNearItem</span><span class="params">(Item item,QPoint ptDirection)</span></span>;	<span class="comment">//统计某个方向(共8个方向)上的相连个数，用QPoint表示统计方向，如(1,1)表示右下方,（-1,0）表示向左</span></span><br><span class="line">	<span class="comment">//bool FindItem(Item item);</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    Ui::MainWindow *ui;</span><br><span class="line"></span><br><span class="line">	QVector&lt;Item&gt; m_items;</span><br><span class="line">	<span class="keyword">bool</span> m_bIsBlackTurn;	<span class="comment">//当前该黑棋下</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">// MAINWINDOW_H</span></span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><font color="FF0000">判断是否五子连的算法：</font>（统计某个棋子item在某个方向ptDirection上，相邻的同色棋子数目）<br><br>方向用QPoint来表示，是取8个方向上1个单位坐标的点，例如：向上（0,1）、向右上（1,1）、向右（1,0）等</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> MainWindow::CountNearItem(Item item,QPoint ptDirection)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">int</span> nCount = <span class="number">0</span>;</span><br><span class="line">	item.m_pt += ptDirection;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (m_items.contains(item))</span><br><span class="line">	&#123;</span><br><span class="line">		nCount++;</span><br><span class="line">		item.m_pt += ptDirection;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> nCount;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><font color="FF0000">鼠标点击消息：</font>
+
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">void</span> MainWindow::mousePressEvent(QMouseEvent * e)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">//求鼠标点击处的棋子点pt</span></span><br><span class="line">	QPoint pt;</span><br><span class="line">	pt.setX( (e-&gt;pos().x() ) / RECT_WIDTH);</span><br><span class="line">	pt.setY( (e-&gt;pos().y() ) / RECT_HEIGHT);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//如果已存在棋子，就什么也不做</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;m_items.size(); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		Item item = m_items[i];</span><br><span class="line">		<span class="keyword">if</span> (item.m_pt == pt)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">//已有棋子</span></span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//不存在棋子，就下一个</span></span><br><span class="line">	<span class="function">Item <span class="title">item</span><span class="params">(pt,m_bIsBlackTurn)</span></span>;</span><br><span class="line">	m_items.append(item);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//统计4个方向是否五子连</span></span><br><span class="line">	<span class="keyword">int</span> nLeft =			CountNearItem(item,QPoint(<span class="number">-1</span>,<span class="number">0</span>));</span><br><span class="line">	<span class="keyword">int</span> nLeftUp =		CountNearItem(item,QPoint(<span class="number">-1</span>,<span class="number">-1</span>));</span><br><span class="line">	<span class="keyword">int</span> nUp =			CountNearItem(item,QPoint(<span class="number">0</span>,<span class="number">-1</span>));</span><br><span class="line">	<span class="keyword">int</span> nRightUp =		CountNearItem(item,QPoint(<span class="number">1</span>,<span class="number">-1</span>));</span><br><span class="line">	<span class="keyword">int</span> nRight =		CountNearItem(item,QPoint(<span class="number">1</span>,<span class="number">0</span>));</span><br><span class="line">	<span class="keyword">int</span> nRightDown =	CountNearItem(item,QPoint(<span class="number">1</span>,<span class="number">1</span>));</span><br><span class="line">	<span class="keyword">int</span> nDown =			CountNearItem(item,QPoint(<span class="number">0</span>,<span class="number">1</span>));</span><br><span class="line">	<span class="keyword">int</span> nLeftDown =		CountNearItem(item,QPoint(<span class="number">-1</span>,<span class="number">1</span>));</span><br><span class="line">	<span class="keyword">if</span> ( (nLeft + nRight) &gt;= <span class="number">4</span> ||</span><br><span class="line">		 (nLeftUp + nRightDown) &gt;= <span class="number">4</span> ||</span><br><span class="line">		 (nUp + nDown) &gt;= <span class="number">4</span> ||</span><br><span class="line">		 (nRightUp + nLeftDown) &gt;= <span class="number">4</span> )</span><br><span class="line">	&#123;</span><br><span class="line">		QString str = m_bIsBlackTurn?<span class="string">"Black"</span>:<span class="string">"White"</span>;</span><br><span class="line">		QMessageBox::information(<span class="literal">NULL</span>,  <span class="string">"GAME OVER"</span>,str, QMessageBox::Yes , QMessageBox::Yes);</span><br><span class="line">		m_items.clear();</span><br><span class="line">		<span class="comment">//NewGame();</span></span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//该另一方下棋了</span></span><br><span class="line">	m_bIsBlackTurn = !m_bIsBlackTurn;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="ensp-【实验结果】"><a href="#ensp-【实验结果】" class="headerlink" title="&ensp;【实验结果】"></a>&ensp;<font face="Microsoft JhengHei">【实验结果】</font></h4><ul>
+<li><font color="#FFFF00">开始界面测试</font>
+
+</li>
+</ul>
+<p>&emsp;<center><img src="https://i.imgur.com/t4wj7wh.png" alt></center></p>
+<ul>
+<li><font color="#FFFF00">输赢界面测试</font>
+
+</li>
+</ul>
+<p>&emsp;<center><img src="https://i.imgur.com/R2pHOTZ.png" alt></center></p>
+<ul>
+<li><font color="#FFFF00">开始界面测试</font>
+
+</li>
+</ul>
+<p><br><center><img src="https://i.imgur.com/HJtbDW4.png" alt></center></p>
+<ul>
+<li><font color="#FFFF00">输赢界面测试</font>
+
+</li>
+</ul>
+<p><br><center><img src="https://i.imgur.com/egO69PB.png" alt></center></p>
+<h4 id="ensp-【数据分析及处理】"><a href="#ensp-【数据分析及处理】" class="headerlink" title="&ensp;【数据分析及处理】"></a>&ensp;<font face="Microsoft JhengHei">【数据分析及处理】</font></h4><h6 id="ensp-4-参考博客及源码："><a href="#ensp-4-参考博客及源码：" class="headerlink" title="&ensp;4.参考博客及源码："></a>&ensp;4.参考博客及源码：</h6><p><br> &emsp; <a href="https://blog.csdn.net/qq_41728697/article/details/80990917" target="_blank" rel="noopener">https://blog.csdn.net/qq_41728697/article/details/80990917</a><br><br> &emsp; <a href="https://blog.csdn.net/dpsying/article/details/53770148" target="_blank" rel="noopener">https://blog.csdn.net/dpsying/article/details/53770148</a><br></p>
+<h4 id="ensp-【总结或讨论】"><a href="#ensp-【总结或讨论】" class="headerlink" title="&ensp;【总结或讨论】"></a>&ensp;<font face="Microsoft JhengHei">【总结或讨论】</font></h4><p><br> &emsp;&emsp;MATLAB老师布置C++作业我起初是很不理解的，而且我并没有学过C++。后来我在网上找来easyx库编写的五子棋程序，在vc++6.0上运行成功后，觉得easyx库并不够强大，不仅只能在vc和vs上使用，而且不能跨平台使用。于是我就在网上寻找怎样在Linux系统上解决图形化编程。网上的答案有两个一种是Qt，另一种是gtk。而gtk依赖程序可能比较繁琐，且到现在我也没运行成功过gtk的五子棋程序。<br><br>&emsp;&emsp;Qt不仅可以跨品台使用而且可以在嵌入式设备上使用，解决嵌入式图形编程，对于自动化专业，嵌入式这个词很敏感。这次的实验程序可能都是直接拷贝别人的成果。一方面自己在C++领域现在可能真的很弱，一方面也想多联系一下让自己自学了半年的Linux。<br><br>&emsp;&emsp;最后我还想说一下写实验报告的过程。因为第一次用实验楼，我发现这里的平台与linux关系很大，让我感觉很亲切。开始写报告的时候我才知道实验报告要用markdown语法，然而在实验楼的环境里我插入图片一直失败，我便在网上找markdown编辑器，下载了markdownpad2用来将图片转为链接解决了图片插入诗派的问题。刚开始我在marxi.co上编写，后来找到atom插件的方法，我便转到atom编辑器上编辑。又查了一些markdown语法最终写完了这篇报告。感觉收获很多，觉得大学生还是要多自学点东西，不要天天打游戏的好。</p>
+      
+    </div>
+    
+    
+    
+
+<div>
+  
+    <div>  <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>  </div>
+
+  
+</div>
+
+<div>
+      
+         <div class="my_post_copyright"> <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script> <!-- JS库 sweetalert 可修改路径 --> <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script> <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <p><span>本文标题:</span><a href="/blog/aaed/">MATLAB实验报告（一）</a></p> <p><span>文章作者:</span><a href="/" title="访问 耿严 的个人博客">耿严</a></p> <p><span>发布时间:</span>2018年11月29日 - 18:11</p> <p><span>最后更新:</span>2019年03月06日 - 12:03</p> <p><span>原始链接:</span><a href="/blog/aaed/" title="MATLAB实验报告（一）">https://erhuoyan.github.io/blog/aaed/</a> <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://erhuoyan.github.io/blog/aaed/" aria-label="复制成功！"></i></span> </p> <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p> </div> <script> var clipboard = new Clipboard('.fa-clipboard'); $(".fa-clipboard").click(function(){ clipboard.on('success', function(){ swal({ title: "", text: '复制成功', icon: "success", showConfirmButton: true }); }); }); </script> 
+
+      
+</div>
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/qrcode_for_gh_cf4b7b7f445a_430.jpg" alt="耿严 wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="耿严 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="耿严 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Qt/" rel="tag"><i class="fa fa-tag"></i> Qt</a>
+          
+            <a href="/tags/easyx/" rel="tag"><i class="fa fa-tag"></i> easyx</a>
+          
+            <a href="/tags/c/" rel="tag"><i class="fa fa-tag"></i> c++</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/be91/" rel="next" title="Diary-20181128">
+                <i class="fa fa-chevron-left"></i> Diary-20181128
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2d01/" rel="prev" title="hexo+github搭建博客（一）">
+                hexo+github搭建博客（一） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bfe60f3b5b5d5ce" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTMzMi8xNzg3OQ=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/backgroung.jpg" alt="耿严">
+            
+              <p class="site-author-name" itemprop="name">耿严</p>
+              <p class="site-description motion-element" itemprop="description">人生不过是一段代码的运行</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/erhuoyan" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_33520219" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-rotate-right"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://gitee.com/erhuoyan" target="_blank" title="gitee">
+                      
+                        <i class="fa fa-fw fa-copyright"></i>gitee</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/6018509665/home?leftnav=1" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://i.loli.net/2018/12/11/5c0f3d8415cba.png" target="_blank" title="QQ">
+                      
+                        <i class="fa fa-fw fa-qq"></i>QQ</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://i.loli.net/2018/12/11/5c0f3c7adebe1.png" target="_blank" title="微信">
+                      
+                        <i class="fa fa-fw fa-weixin"></i>微信</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.yilan.io" title="一览" target="_blank">一览</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.eksecorp.com/" title="忆苦思甜(翻译国外文章)" target="_blank">忆苦思甜(翻译国外文章)</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.ruanyifeng.com/" title="阮一峰blog" target="_blank">阮一峰blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.ireadweek.com" title="周读" target="_blank">周读</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.shuwu.mobi" title="我的小书屋" target="_blank">我的小书屋</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.bilibili.com/" title="B站" target="_blank">B站</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://juejin.im/" title="掘金" target="_blank">掘金</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://maxiang.io" title="马克飞象" target="_blank">马克飞象</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://bookist.cc/" title="书大师" target="_blank">书大师</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://sm.ms/" title="SM.MS(图床)" target="_blank">SM.MS(图床)</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.jianshu.com/u/4312c933b9db" title="极客江南(web)" target="_blank">极客江南(web)</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安徽大学电气工程及自动化学院本科实验报告"><span class="nav-number">1.</span> <span class="nav-text"> 安徽大学电气工程及自动化学院本科实验报告</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【课程名称】-emsp-emsp-MATLAB程序设计实验-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp"><span class="nav-number">1.0.0.1.</span> <span class="nav-text"> 【课程名称】  MATLAB程序设计实验           </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【课程目标】-（依据教学大纲）"><span class="nav-number">1.0.0.2.</span> <span class="nav-text"> 【课程目标】 （依据教学大纲）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【实验名称】-emsp-emsp-基于easyx和Qt的五子棋程序-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp"><span class="nav-number">1.0.0.3.</span> <span class="nav-text"> 【实验名称】  基于easyx和Qt的五子棋程序         </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【实验目的】"><span class="nav-number">1.0.0.4.</span> <span class="nav-text"> 【实验目的】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【实验原理及方法】"><span class="nav-number">1.0.0.5.</span> <span class="nav-text"> 【实验原理及方法】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【实验内容及过程】"><span class="nav-number">1.0.0.6.</span> <span class="nav-text"> 【实验内容及过程】</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基于easyx的五子棋程序"><span class="nav-number">1.0.0.6.1.</span> <span class="nav-text">基于easyx的五子棋程序</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#ensp-1-安装easyx-下载地址"><span class="nav-number">1.0.0.6.1.1.</span> <span class="nav-text"> 1. 安装easyx:下载地址</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#ensp-2-代码片段"><span class="nav-number">1.0.0.6.1.2.</span> <span class="nav-text"> 2. 代码片段</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#基于Qt的五子棋程序"><span class="nav-number">1.0.0.6.2.</span> <span class="nav-text">基于Qt的五子棋程序</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#ensp-1-安装Qt"><span class="nav-number">1.0.0.6.2.1.</span> <span class="nav-text"> 1. 安装Qt:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#ensp-2-代码片段-1"><span class="nav-number">1.0.0.6.2.2.</span> <span class="nav-text"> 2. 代码片段</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【实验结果】"><span class="nav-number">1.0.0.7.</span> <span class="nav-text"> 【实验结果】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【数据分析及处理】"><span class="nav-number">1.0.0.8.</span> <span class="nav-text"> 【数据分析及处理】</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#ensp-4-参考博客及源码："><span class="nav-number">1.0.0.8.0.1.</span> <span class="nav-text"> 4.参考博客及源码：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-【总结或讨论】"><span class="nav-number">1.0.0.9.</span> <span class="nav-text"> 【总结或讨论】</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+<div id="music163player">
+ <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=441552&auto=0&height=66"></iframe>
+  </div>
+
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">耿严</span>
+
+  
+</div>
+
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+
+  <span class="post-meta-divider">|</span>
+
+-->
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共13.5k字</span>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("GRTjOhQCLhVF3AMYXzAz9Y9v-gzGzoHsz", "NyiBhoCVvKPkazVBtlL0kKq1");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 15247,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+   
+      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+      <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+      <!--<script type="text/javascript" src="/js/src/fireworks.js"></script>-->
+      <!-- 页面点击小红心 -->
+      <script type="text/javascript" src="/js/src/love.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":100,"height":200},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
