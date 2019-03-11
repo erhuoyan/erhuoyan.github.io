@@ -34,7 +34,7 @@ date: 2019-03-06 19:35:00
 
 2. 将以下内容添加至`.gitignore`文件中
 
-    ```
+    ```txt
     .DS_Store
     Thumbs.db
     db.json
