@@ -17,21 +17,21 @@ date: 2018-12-01 11:44:37
 
 <!--more-->
 
-# 安装
+## 安装
 
 安装 Hexo必须先在电脑中安装下列应用程序：
 
 - [Node.js](https://nodejs.org/en/)
 - [Git](http://xk2.ahu.cn/CheckCode.aspx)  
 
-## 安装Git
+### 安装Git
 
 Windows|Ubuntu
 :-----:|:----:
 下载后直接安装|`sudo add-apt-repository ppa:git-core/ppa;`
 下载地址：[git](https://git-scm.com/download/win)|`sudo apt update;sudo apt install git`
 
-## 安装Node.js
+### 安装Node.js
 
 安装 Node.js 的最佳方式是使用 nvm。大家需要在**Git Bash**中输入以下命令：
 
@@ -49,14 +49,14 @@ Wget:
 
 {% note warning %}
 
-### Windows用户
+#### Windows用户
 
 对与windows用户来说建议使用[安装程序](https://nodejs.org/en/)进行安装。安装时，请勾选**Add to PATH**选项。
 Windows可以使用**Git Bash**,安装完git之后在开始菜单中搜索git或在任意目录下右键选择`Git Bash Here`，可在该环境下直接使用上述命令安装Node.js。
 
 {% endnote %}
 
-## 安装Hexo
+### 安装Hexo
 
 npm的默认软件源速度非常慢，通常将其改成淘宝镜像
 在**Git Bash**中输入以下命令进行配置：
@@ -69,27 +69,27 @@ npm的默认软件源速度非常慢，通常将其改成淘宝镜像
 
 等待安装结束。
 
-# 建议
+## 建议
 
 hexo的安装过程可能对没有使用过Linux或Mac系统的伙伴来说有点不习惯，毕竟大家在windows系统上安装软件的时候都是图形交互，鼠标点击就可以了。但是这里，还是建议大家学习一些其他东西，方便之后博客的创作、部署、配置等操作。
 
-## 1. bash命令
+### 1. bash命令
 
 我们安装了Git之后，对于用过Linux的用户来说会感到非常熟悉，没错Git Bash其实使用的就是Linux系统的bash命令。想要深入学习Linux的朋友可以在网上寻找教程，或者在网易云课堂找一些视频。当然也可以找我咨询一些建议，交流经验。
 
-## 2. vim编辑器
+### 2. vim编辑器
 
 vim被誉为编辑器之神。学习Linux的过程中不可能跳过这一步。在之后我们需要对博客进行配置的时候经常用到vim的搜索功能。大家需要知道vim如何进行编辑、保存、搜索。
 
-## 3. github
+### 3. github
 
 其实只需要**Hexo**和**git bash**我们便可以把博客部署到本地。但如果想要部署到网上让别人也能访问，就需要用到Github了，大家需要先注册一个[github](https://github.com/)，在之后我会教大家如何将本地博客部署到github，如果购买了域名，也可以将域名与github绑定。github的主要功能并不是解决博客部署问题，它是一个开源社区，强烈推荐大家学习一下。
 
-## 4. Markdown语法
+### 4. Markdown语法
 
 在windows上大家都是用word进行写作，但是word保存之后是二进制文件，只能用word软件打开，并不适合作为网页文本编辑器。Hexo采用markdown语法编辑博文，大家需要学习一下markdown的无法规范，以便能将自己的博文排版做的漂亮。Markdown编辑器推荐：[Typora](https://www.typora.io/)。
 
-# 附：
+## 附
 
 {% note %}
 
